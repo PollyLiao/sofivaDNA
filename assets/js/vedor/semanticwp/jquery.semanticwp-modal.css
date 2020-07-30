@@ -1,0 +1,49 @@
+.swpmodal-overlay,
+.swpmodal-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+}
+.swpmodal-container {
+	overflow: auto;
+}
+*:first-child + html .swpmodal-container {
+	height: 100%
+}
+.swpmodal-container_i {
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+}
+.swpmodal-container_i:after{content: ''; display: inline-block; height: 100%; vertical-align: middle;  }
+.swpmodal-container_i2 {
+/*	padding: 24px;*/
+	display: inline-block; vertical-align: middle; width:100%;
+}
+
+
+.swpmodal-error {
+	padding: 20px;
+	border-radius: 10px;
+	background: #000;
+	color: #fff;
+}
+
+
+.swpmodal-preloader {
+/*	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	background: #000 url(preloader.gif) no-repeat 50% 50%;*/
+}
+
+.swpmodal-close{display: block; }
+.process_close{font-size: .68rem; color:#FFF; font-weight:bold; background: #ee9b11; width:120px;  padding:15px 20px; position: absolute; top:0; right:0; z-index: 99; letter-spacing: .05em}
+.process_close i, .envi_close i{width:9px; height:9px; display: inline-block; margin-left: 20px}
+.process_close i{ background:url('../../../img/icon-xsW.png');}
+.process_close:hover{background: #777}
+.envi_close{font-size:.68rem; color:#000; margin-top: 60px;}
+.envi_close i{background:url('../../../img/icon-xsB.png'); }
